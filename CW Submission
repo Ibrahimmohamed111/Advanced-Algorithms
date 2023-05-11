@@ -1,0 +1,22 @@
+I can provide a detailed report discussing the proposed solutions for each task and their efficiency.
+
+Task-1:
+Given an array of characters, give an efficient algorithm for removing the duplicates, if any.
+One efficient solution for removing duplicates from an array of characters is to use a hash table or a set to keep track of the unique characters while iterating through the array. For each character in the array, we can check if it is present in the hash table. If it is not present, we can add it to the hash table and the result array.
+If it is present, we can skip it. This algorithm has a time complexity of O(n), where n is the size of the input array. The space complexity of this algorithm is also O(n) since we need to store all the unique characters in the result array.
+
+Task-2:
+Given two arrays of unordered numbers, check whether both arrays have the same set of numbers.
+One efficient solution for this task is to use a hash table or a set to count the occurrences of numbers in each array. Then, we can compare the two sets to check if they contain the same elements. This algorithm has a time complexity of O(n), where n is the total number of elements in both arrays. The space complexity of this algorithm is also O(n) since we need to store all the unique numbers in the hash tables.
+
+Task-3:
+Design an ADT for a two-color, double-stack ADT that consists of two stacks - one "red" and one "blue" - and has as its operations color-coded versions of the regular stack ADT operations. For example, this ADT should allow for both a red push operation and a blue push operation. Give an efficient implementation of this ADT using a single array whose capacity is set at some value N that is assumed to always be larger than the sizes of the red and blue stacks combined.
+One efficient implementation for the two-color, double-stack ADT is to use a single array and two pointers to keep track of the top of each stack. Each stack's elements can be color-coded to distinguish them. The push operation for each stack can be implemented by incrementing the corresponding pointer and adding the element at that index. The pop operation can be implemented by decrementing the pointer and returning the element at that index. This implementation has a time complexity of O(1) for push and pop operations.
+The space complexity of this implementation is
+O(N) since we need to allocate an array of size
+N to store the elements.
+Task-4: Develop a program that simulates the scheduling process of CPU jobs. CPU jobs have priority values from 1 to 10 (highest), and a duration time, which is a value that indicates how many time slices are needed to complete the job. For each time slice, the scheduler should choose the job according to the following policies:
+• First Come First Served.
+• Highest priority.
+• Shortest Remaining Time First.
+One efficient implementation for this task is to use a priority queue to store the jobs based on their priority or remaining time. For the First Come First Served policy, we can use a queue to store the jobs in the order of their arrival. The scheduler selects the job at the front of the queue to execute. For the Highest Priority policy, we can use a priority queue to store the jobs based on their priority value. The scheduler selects the job with the highest priority to execute. For the Shortest Remaining Time First policy, we can use a priority queue to store the jobs based on their remaining time. The scheduler selects the job with the shortest remaining time to execute. These algorithms have different time complexities, depending on the implementation details and the number of jobs
